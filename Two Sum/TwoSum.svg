@@ -11,6 +11,9 @@
             <h1>1. Two Sum</h1>
             <ul class="a">
                 <li><h4>Given an array of integers nums and an integer target, return indices of the two numbers such that they add up to target.</h4></li>
+                <li><h4>You may assume that each input would have <u>exactly one solution</u>.</h4></li>
+                <li><h4>you may not use the same element twice.</h4></li>
+                <li><h4>You can return the answer in any order.</h4></li>
             </ul>
         </div>
     </foreignObject>
