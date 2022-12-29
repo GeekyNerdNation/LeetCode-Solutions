@@ -1,22 +1,17 @@
-<svg fill="none" viewBox="0 0 400 400" width="400" height="400" xmlns="http://www.w3.org/2000/svg">
+<svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
     <foreignObject width="100%" height="100%">
         <div xmlns="http://www.w3.org/1999/xhtml">
             <style>
-            h1 {
-                color: red;
-                animation: mymove 2s infinite;
+            ul.a {
+                list-style-type: circle;
             }
 
-            @keyframes mymove {
-                from {
-                    color: red;
-                }
-                to {
-                    color: yellow;
-                }
-            }
+        
             </style>
-            <h1>HELLO WORLD!</h1>
+            <h1>1. Two Sum</h1>
+            <ul class="a">
+                <li><h4>Given an array of integers nums and an integer target, return indices of the two numbers such that they add up to target.</h4></li>
+            </ul>
         </div>
     </foreignObject>
 </svg>
