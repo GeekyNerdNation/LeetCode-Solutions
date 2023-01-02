@@ -1,21 +1,36 @@
 
-public class AddTwoNumbers_2 {
+public class AddTwoNumbers {
 
 	public static void main(String[] args) {
-		ListNode node3 = new ListNode(3);
-		ListNode node2 = new ListNode(4, node3);
-		ListNode node1 = new ListNode(2, node2);
 
-		ListNode node4 = new ListNode(4);
-		ListNode node5 = new ListNode(6, node4);
-		ListNode node6 = new ListNode(5, node5);
+		AddTwoNumbers objAddTwoNumbers = new AddTwoNumbers();
 
-		ListNode result = addTwoNumbers(node1, node6);
+		ListNode nodeA = new ListNode(2);
+		ListNode nodeB = new ListNode(4);
+		ListNode nodeC = new ListNode(3);
 
-		System.out.println(result);
+		nodeA.next = nodeB;
+		nodeB.next = nodeC;
+
+		ListNode nodeX = new ListNode(5);
+		ListNode nodeY = new ListNode(6);
+		ListNode nodeZ = new ListNode(4);
+		
+		nodeX.next = nodeY;
+		nodeY.next = nodeZ;
+
+		ListNode result = objAddTwoNumbers.addTwoNumbers(nodeA, nodeX);
+
+		while (result != null) {
+			System.out.print(result.val);
+			result = result.next;
+			if (result != null) {
+				System.out.print(" -> ");
+			}
+		}
 	}
 
-	public static ListNode addTwoNumbers(ListNode l1, ListNode l2) {
+	public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
 
 		int carry = 0;
 		ListNode result = null;
