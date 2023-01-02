@@ -4,7 +4,7 @@ public class TwoSum_BruteForce {
 
 		TwoSum_BruteForce objTwoSum = new TwoSum_BruteForce();
 
-		int[] nums = { 2 };
+		int[] nums = { 2, 5, 6, 7 };
 		int target = 9;
 
 		int[] result = objTwoSum.twoSum(nums, target);
